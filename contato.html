@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato · Freud Vivo</title>
+<meta name="description" content="Fale com Freud Vivo.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__marca">Freud Vivo</a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="freud.html">Freud</a></li>
+      <li><a href="conceitos.html">Conceitos</a></li>
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="jornada.html">Jornada</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="contato.html" aria-current="page">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="pagina-hero">
+  <div class="container">
+    <h1>Contato</h1>
+    <p>Uma dúvida, uma sugestão de tema, ou apenas uma palavra. Sem promessa de resposta imediata, mas com atenção genuína.</p>
+  </div>
+</header>
+
+<section class="secao">
+  <div class="container">
+    <form class="form-contato" action="mailto:contato@freudvivo.com.br" method="post" enctype="text/plain">
+      <div class="form-campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-campo">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="botao">Enviar mensagem</button>
+    </form>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="container">
+    <div>
+      <h4>Freud Vivo</h4>
+      <p>Um site da série Corpo Vivo, sobre pensadores e ideias que ajudam a entender a mente humana.</p>
+    </div>
+    <div>
+      <h4>Mapa do site</h4>
+      <ul class="rodape__mapa">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="freud.html">Freud</a></li>
+        <li><a href="conceitos.html">Conceitos</a></li>
+        <li><a href="obras.html">Obras</a></li>
+        <li><a href="jornada.html">Jornada</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <p class="rodape__disclaimer">Este site tem finalidade educativa e reflexiva. Não substitui acompanhamento psicológico ou psicanalítico profissional. As interpretações apresentadas seguem a obra de Sigmund Freud, com referência à Edição Standard Brasileira (Imago).</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
