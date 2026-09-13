@@ -335,18 +335,15 @@ img { max-width: 100%; display: block; }
   .pessoal { grid-template-columns: 1fr; }
 }
 
-.pessoal__retrato {
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  background: var(--creme-quente);
-  border: 2px solid var(--dourado);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--fonte-display);
-  font-size: 2.4rem;
-  color: var(--bordo);
+.pessoal__monograma {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.pessoal__monograma svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ---------- Página interna genérica ---------- */
@@ -373,6 +370,71 @@ img { max-width: 100%; display: block; }
 }
 
 .lista-topicos li { margin-bottom: var(--esp-s); }
+
+/* ---------- Blocos de conteúdo do texto base ---------- */
+
+.pagina-corpo {
+  max-width: var(--coluna-max);
+}
+
+.pagina-corpo h2 {
+  margin-top: var(--esp-xxl);
+  padding-top: var(--esp-l);
+  border-top: 1px solid var(--borda);
+}
+
+.pagina-corpo h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.pagina-corpo h3 {
+  color: var(--bordo);
+  margin-top: var(--esp-l);
+}
+
+.midia-bloco {
+  margin: var(--esp-l) 0;
+  padding: var(--esp-m);
+  background: var(--creme);
+  border-left: 3px solid var(--dourado);
+}
+
+.midia-bloco img {
+  max-width: 260px;
+  margin: 0 auto var(--esp-m);
+  border: 1px solid var(--borda);
+}
+
+.midia-bloco audio {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin: 0 auto;
+}
+
+.midia-bloco figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--vinho-medio);
+  font-style: italic;
+  margin-top: var(--esp-s);
+}
+
+.audio-intro {
+  margin: var(--esp-l) 0 0;
+  padding: var(--esp-m) var(--esp-l);
+  background: var(--creme-quente);
+  border-left: 3px solid var(--dourado);
+}
+
+.audio-intro p {
+  margin: 0 0 var(--esp-s);
+  font-size: 0.9rem;
+  color: var(--vinho-medio);
+  font-style: italic;
+}
+
+.audio-intro audio {
+  width: 100%;
+}
 
 /* ---------- Rodapé ---------- */
 
